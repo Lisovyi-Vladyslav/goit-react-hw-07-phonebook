@@ -15,7 +15,7 @@ export const ContactForm = () => {
     return (
       <>
         <Formik
-       initialValues={{ name: '', avatar: '' }}
+       initialValues={{ name: '', phone: '' }}
        onSubmit={handleSubmit}
         >
 <Form>
@@ -30,11 +30,11 @@ export const ContactForm = () => {
   <h2>Number</h2>
   <Field
   type="tel"
-  name="avatar"
+  name="phone"
   pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-  title="Phone avatar must be digits and can contain spaces, dashes, parentheses and can start with +"
+  title="Phone phone must be digits and can contain spaces, dashes, parentheses and can start with +"
   required/>
-<ErrorMessage name="avatar" component="div" />
+<ErrorMessage name="phone" component="div" />
 <button type="submit">
   Add contact
 </button>
