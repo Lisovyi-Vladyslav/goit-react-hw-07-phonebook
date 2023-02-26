@@ -25,10 +25,10 @@ dispatch(
       <>
          <ul>
             {
-            filteredContacts.map(({ id, name, avatar }) => (
+            filteredContacts.map(({ id, name, phone }) => (
                 
                 <li key={id}>
-                  <span> {name}: {avatar}</span>
+                  <span> {name}: {phone}</span>
                   <button onClick={() =>handleDelete(id)}>Delete</button>
                 </li>
               ))}
